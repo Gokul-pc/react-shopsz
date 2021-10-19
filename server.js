@@ -29,7 +29,6 @@ app.use('/api', require('./routes/upload'))
 //mongodb connection
 const URI = process.env.MONGO_URL
 mongoose.connect(URI,{
-  
 }, err=>{
     if(err) throw err;
     console.log("connected to mongodb");
