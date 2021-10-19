@@ -20,6 +20,11 @@ app.use(fileUpload({
 // routers
 app.use('/user', require('./routes/userRouter'))
 app.use('/api', require('./routes/categoryRouter'))
+app.use('/api', require('./routes/upload'))
+
+
+
+
 //mongodb connection
 const URI = process.env.MONGO_URL
 mongoose.connect(URI,{
