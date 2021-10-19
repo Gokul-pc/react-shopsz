@@ -14,6 +14,7 @@ app.use(expres.json())
 app.use(cookieParser())
 app.use(cors())
 app.use(fileUpload({
+   useTempFiles:true,
    
 }))
 
