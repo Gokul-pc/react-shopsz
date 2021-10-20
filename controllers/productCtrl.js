@@ -71,6 +71,6 @@ const productCtrl = {
             return res.status(500).json({ msg: err.message })
         }
     }
-}
+}//this is sample
 
 module.exports = productCtrl
